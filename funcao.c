@@ -140,6 +140,7 @@ void imprimir_caracter(int quantidade, char caracter){
 }
 */
 // Atividade6
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -149,21 +150,21 @@ int verifica_soma(int a, int b, int resposta);
 int main() {
     int num1, num2, resposta;
 
-    srand(time(NULL)); // inicializa a semente para rand()
+    srand(time(NULL)); 
 
     do {
-        // gera dois números aleatórios de 0 a 9
-        num1 = rand() % 10;
-        num2 = rand() % 10;
+       
+        num1 = rand() % 10+1;
+        num2 = rand() % 10+1;
 
         do {
-            // pergunta ao aluno
+            
             printf("Quanto eh %d + %d? (0 para sair)\n", num1, num2);
             scanf("%d", &resposta);
 
             if (resposta == 0) {
                 printf("\nPrograma encerrado.\n");
-                return 0; // sai do programa
+                break; 
             }
 
             if (verifica_soma(num1, num2, resposta)) {
@@ -172,13 +173,117 @@ int main() {
                 printf("Continue Tentando\n");
             }
 
-        } while (!verifica_soma(num1, num2, resposta)); // repete enquanto estiver errado
+        } while (!verifica_soma(num1, num2, resposta)); 
 
-    } while (1); // loop infinito para novas questões
+    } while (resposta != 0);
 
     return 0;
 }
 
 int verifica_soma(int a, int b, int resposta) {
     return (resposta == a + b) ? 1 : 0;
+}
+*/
+
+// Atividade7
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int verifica_soma(int a, int b, int resposta);
+int imprime_mensagem(int);
+int main() {
+    int num1, num2, resposta, valor, valor_correto;
+
+    srand(time(NULL)); 
+
+    do {
+       
+        num1 = rand() % 10+1;
+        num2 = rand() % 10+1;
+
+        do {
+            
+            printf("Quanto eh %d + %d? (0 para sair)\n", num1, num2);
+            scanf("%d", &resposta);
+
+            if (resposta == 0) {
+                printf("\nPrograma encerrado.\n");
+                break; 
+            }
+
+            if (verifica_soma(num1, num2, resposta)) {
+                
+                valor = 1;
+               
+                switch (valor_correto){
+
+                case 1:
+                    printf("Muito Bem!\n\n");
+                break;
+                
+                case 2:
+                    printf("Continue Assim\n\n");
+                break;
+            
+                case 3:
+                    printf("Otimo trabaho!\n\n");
+                break;
+
+                case 4:
+                    printf("Parabéns! Voce eh Otimo\n\n");
+                break;
+                
+               
+                }
+            } else {
+                
+                valor = 2;
+
+                switch (valor_correto){
+                case 5:
+                    printf("Continue Tentando\n\n");
+                break;
+                
+                case 6:
+                    printf("Errou por pouco\n\n");
+                break;
+                
+                case 7:
+                    printf("Não desista\n\n");
+                break;
+
+                case 8:
+                    printf("Voce consegue, coragem\n\n");
+                break;
+
+                
+                }
+
+            }
+
+        } while (!verifica_soma(num1, num2, resposta)); 
+
+    } while (resposta != 0);
+
+    return 0;
+}
+
+int verifica_soma(int a, int b, int resposta) {
+    return (resposta == a + b) ? 1 : 0;
+}
+
+int imprime_mensagem(int valor_correto ) {
+    int valor;
+    srand(time(NULL));
+    
+    if (valor == 1){
+    valor_correto = rand() % 5+1;
+    }
+
+    else{
+    valor_correto = rand() % 4+4;
+    }
+
 }
