@@ -28,10 +28,10 @@ int main(){
             quanti1 ++;
         }
     }
-    
+     
     for(i = 0; i < 12; i++){
-        
         divisao = inteiro[i] %2;
+         
         if(divisao == 0){
             printf("\n\t O numero %i eh par",inteiro[i]);
         }
