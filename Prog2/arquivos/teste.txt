@@ -1,0 +1,4 @@
+Guaratuba - 22.4 - 35.0 - 3 
+Paranagua - 17.3 - 26.3 - 4 
+Antonina - 27.2 - 35.0 - 1 
+Curitiba - 11.7 - 15.9 - 2

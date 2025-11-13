@@ -1,0 +1,90 @@
+1)(feito) Faça um programa que efetue a leitura de valores positivos inteiros até que um valor negativo
+seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo
+usuário (excluindo o valor negativo).
+Digite um valor: "4"
+Digite um valor: "6"
+Digite um valor: "410"
+Digite um valor: "9"
+Digite um valor: "-1"
+Maior valor: "410"
+Menor valor: "4"
+
+2)(feito) Faça um programa em C que solicite ao usuário 6 valores de tal modo que os valores
+fornecidos pelo usuário estejam em ordem crescente. Isto é, caso o segundo valor seja menor
+que o primeiro, solicite ao usuário um novo valor até que este seja maior que o primeiro e, o
+segundo maior que o terceiro e assim por diante. Após esta etapa, efetue uma soma entre o
+primeiro e o último valor apresentando o resultado na tela juntamente com todos os outros
+valores digitados pelo usuário.
+Digite o primeiro valor: "4"
+Digite o segundo valor: "5"
+Digite o terceiro valor: "7"
+Digite o quarto valor: "3"
+Digite o quarto valor: "8"
+Digite o quinto valor: "9"
+Digite o sexto valor: "12"
+O Primeiro valor Somado ao ultimo: "16"
+Todos os valores: 4 - 5 - 7 - 8 - 9 - 12
+
+
+3) (feito) Faça um programa em C que solicite ao usuário um valor e calcule a sequência de Fibonacci
+deste valor. A série de Fibonacci é formada pela sequência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta
+série se caracteriza pela soma de um termo atual com o seu anterior subseqüente, para que seja
+formado o próximo valor da seqüência. Portanto começando com os números 1, 1 o próximo
+termo é 1+1=2, o próximo é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc..
+Forneca um valor: "13"
+A sequência de Fibonacci do valor eh: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,.
+
+primeira etapa
+f3 = f1+f2; 
+ftotal = f3 (f3 = 2)
+
+segunda etapa
+f2 = f3+f1
+ftotal = f2 (f2 = 3)
+
+terceira etapa
+f1 = f2+f3 
+ftotal = f1 (f1 = 5)
+
+quarta etapa
+f3 = f2+f1
+ftotal = f3 (f3 = 8)
+
+
+4) (feito) Faça um programa em C que solicite ao usuário 2 valores e mostre na tela a soma do números
+pares contidos entre os valores digitados pelo usuário (excluindo-os). Por exemplo, se o usuário
+forneceu 2 e 9, a soma deve ser: 4 + 6 + 8 = 18.
+Digite o primeiro valor: "4"
+Digite o segundo valor: "13"
+A soma dos valores pares entre "4" e "13": 6 + 8 + 10 + 12 = 36
+
+5) (feito) Faça um programa em C que, a partir da tela com o menu abaixo, efetue conversões de
+temperaturas.
+Conversões Online
+1. Celsius para Fahrenheit
+2. Fahrenheit para Celsius
+3. Celsius para Kelvin
+4. Kelvin para Celsius
+5. Encerrar programa
+Informe a opção desejada: 1
+Digite a temperatura em Celsius: 28
+Temperatura em Fahrenheit: 82.4
+
+
+
+
+Considere as seguintes fórmulas de conversão:
+1. F = C×1,8+32
+
+2. C = (F–32)/1,8
+3. K = C+273,15
+4. C = K–273,15
+
+6) (feito) Os números primos são números que são divisíveis SOMENTE por 1 e por eles mesmos. Note
+que todos os números são divisíveis por 1 e por ele mesmo. Faça um programa em C que solicite
+
+ao usuário 2 valores e mostre os números primos existentes entre estes dois valores (incluindo-
+os).
+
+Digite 2 valores: "3" "15"
+Números primos entre (3) e (15): 3, 5, 7, 11, 13
